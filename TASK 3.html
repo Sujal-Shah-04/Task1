@@ -1,15 +1,35 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Toggle</title>
+    <title>Login / Signup</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="password-container">
-        <input type="password" id="password" placeholder="Enter password">
-        <button class="toggle-btn" id="toggleBtn">Show</button>
+    <div class="form-container">
+        <h2 id="formTitle">Login</h2>
+
+        <form id="authForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Enter password" required>
+                    <span class="toggle-btn" id="toggleBtn">👁️</span>
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Login</button>
+
+            <p class="toggle-text">
+                Don't have an account? <a href="#" id="toggleLink">Sign up</a>
+            </p>
+        </form>
     </div>
 
     <script src="script.js"></script>

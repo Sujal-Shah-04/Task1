@@ -1,28 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Updated form to black background */
+.form-container {
+    background: black;
+    color: white; /* Ensure text remains visible */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Light shadow */
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: white; /* Ensure labels are visible */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #222; /* Dark input background */
+    color: white;
+}
+
 .password-container {
+    position: relative;
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 5px;
-    width: 250px;
+    width: 100%;
 }
 
 .password-container input {
-    border: none;
-    outline: none;
-    flex: 1;
-    padding: 5px;
+    width: 100%;
+    padding: 10px;
+    padding-right: 35px; /* Space for the toggle button */
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #222;
+    color: white;
 }
 
+/* Updated toggle button color */
 .toggle-btn {
+    position: absolute;
+    right: 10px;
     cursor: pointer;
-    background: none;
-    border: none;
-    font-size: 14px;
-    color: #007BFF;
-    font-weight: bold;
+    font-size: 16px;
+    color: #ccc;
+    padding: 5px;
+    user-select: none;
 }
 
 .toggle-btn:hover {
-    color: #0056b3;
+    color: #fff;
+}
+
+/* Updated button color */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.toggle-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.toggle-text a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.toggle-text a:hover {
+    text-decoration: underline;
 }
