@@ -5,7 +5,7 @@ body {
     display: flex;
     height: 100vh;
     background: #0d1117;
-    color: #39ff14;
+    color: #ffffff;
     transition: background 0.3s;
 }
 
@@ -23,7 +23,7 @@ body {
 
 .sidebar h2 {
     margin-bottom: 15px;
-    color: #39ff14;
+    color: #ffffff;
 }
 
 .sidebar ul {
@@ -38,7 +38,7 @@ body {
 }
 
 .sidebar ul li:hover {
-    background: #39ff14;
+    background: #ffffff;
     color: #0d1117;
     border-radius: 6px;
 }
@@ -47,7 +47,7 @@ body {
     margin-top: 15px;
     width: 100%;
     padding: 10px;
-    background: #39ff14;
+    background: #ffffff;
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -67,32 +67,39 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 10px;
-    color: #39ff14;
+    color: #ffffff;
 }
 
 .input-container {
     display: flex;
     gap: 10px;
     margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
 }
 
 input, select, button {
     padding: 10px;
     border-radius: 6px;
-    border: 1px solid #39ff14;
+    border: 1px solid #ffffff;
     background: #0d1117;
-    color: #39ff14;
+    color: #ffffff;
 }
 
 button {
-    background: #39ff14;
+    background: #ffffff;
     cursor: pointer;
     font-weight: bold;
     color: #0d1117;
 }
 
 button:hover {
-    background: #28cc09;
+    background: #ffffff;
 }
 
 ul {
@@ -109,7 +116,7 @@ li {
     justify-content: space-between;
     align-items: center;
     transition: background 0.3s;
-    border: 1px solid #39ff14;
+    border: 1px solid #ffffff;
 }
 
 li:hover {
@@ -118,7 +125,7 @@ li:hover {
 
 .completed {
     text-decoration: line-through;
-    color: #39ff14;
+    color: #ffffff;
     opacity: 0.6;
 }
 
@@ -128,7 +135,7 @@ li:hover {
 }
 .dark-theme {
     background: #000;
-    color: #0f0;
+    color: rgb(255, 255, 255);
 }
 
 .dark-theme .todo-container {
@@ -141,6 +148,7 @@ li:hover {
 }
 
 .dark-theme button {
-    background: #0f0;
+    background: rgb(255, 255, 255);
     color: #000;
 }
+

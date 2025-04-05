@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sujal's To-Do List</title>
+    <title>Task Manager</title>
     <link rel="stylesheet" href="styless.css">
 </head>
 <body>
@@ -13,8 +13,10 @@
             <ul>
                 <li onclick="filterTasks('all')">All</li>
                 <li onclick="filterTasks('code')">Coding</li>
-                <li onclick="filterTasks('research')">Research</li>
+                <li onclick="filterTasks('daily')">Daily Activities</li>
                 <li onclick="filterTasks('debug')">Debugging</li>
+                <li onclick="filterTasks('Tasks Completed')">Tasks Completed</li>
+                <li onclick="filterTasks('Tasks Not Completed')">Tasks Not Completed</li>
             </ul>
             <button id="toggleTheme">Toggle Theme</button>
         </aside>
@@ -24,15 +26,16 @@
                 <input type="text" id="taskInput" placeholder="Enter a mission...">
                 <select id="category">
                     <option value="code">Coding</option>
-                    <option value="research">Research</option>
+                    <option value="daily">Daily Activities</option>
                     <option value="debug">Debugging</option>
                 </select>
-                <button onclick="addTask()">Execute</button>
+                <div class="button-group">
+                    <button onclick="addTask()">Execute</button>
+                    <button onclick="clearAllTasks()">Abort All</button>
+                </div>
             </div>
+            
             <ul id="taskList"></ul>
-            <div class="controls">
-                <button onclick="clearAllTasks()">Abort All</button>
-            </div>
         </main>
     </div>
     <script src="scriptss.js"></script>
